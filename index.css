@@ -1,0 +1,114 @@
+body {
+  font-size: 16px;
+  background-color: #eeebe8;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, arial, sans-serif;
+}
+
+.root {
+  margin: auto;
+  padding: 20px 16px;
+  max-width: 1160px;
+}
+
+.nextory__header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #eeebe8;
+  z-index: 1;
+  padding: 20px 16px;
+  box-sizing: border-box;
+}
+
+.nextory__banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nextory__brand-logo {
+  width: 100px;
+}
+
+.nextory__site-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nextory__menu {
+  color: #733459;
+  font-size: 36px;
+  margin-left: 10px;
+}
+
+.nextory__menu p {
+  margin: 0;
+}
+
+.nextory__article {
+  width: 100%;
+  text-align: center;
+  margin: 200px 0;
+}
+
+.nextory__primary-article {
+  color: #733459;
+}
+
+.nextory__primary-button {
+  margin-top: 2rem;
+}
+.btn-primary {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 42px;
+  background-color: #e95164;
+  padding: 12px 28px;
+  border-color: #e95164;
+  font-weight: 500;
+  font-size: 0.88rem;
+  margin-top: 2rem;
+}
+
+.nextory__artice-image {
+  max-width: 100%;
+}
+
+.nextory__artice-image img {
+  width: 100%;
+}
+
+.nextory__secondary-article .nextory__article-text {
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nextory__header {
+    max-width: 1160px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .nextory__secondary-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nextory__secondary-article:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .nextory__secondary-article div {
+    flex: 1 1 50%;
+    text-align: left;
+    padding: 20px;
+    max-width: 380px;
+  }
+  .nextory__secondary-article .nextory__article-text {
+    padding-bottom: 0;
+  }
+}
